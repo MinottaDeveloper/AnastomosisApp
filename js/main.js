@@ -2,14 +2,14 @@
 let isRecording = false;
 
 function setup() {
-    createCanvas(400, 400);
+    createCanvas(windowWidth, windowHeight);
     capture = createCapture(VIDEO);
-    capture.size(320, 240);
+    capture.size(windowHeight, windowHeight);
   }
   
   function draw() {
     background(220);
-    image(capture, 0, 0, 320, 240);
+    image(capture, 0, 0, windowHeight, windowHeight);
   }
 
   function toggleRecording() {
